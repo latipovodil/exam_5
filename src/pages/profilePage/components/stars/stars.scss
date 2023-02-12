@@ -1,0 +1,129 @@
+.stars__header-title {
+  font-size: 20px;
+  font-weight: 300;
+  color: #c9d1d9;
+  > span {
+    color: #8b949e;
+  }
+}
+.stars {
+  padding: 16px;
+  position: relative;
+}
+
+.stars__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.stars {
+  display: block;
+  width: 100%;
+}
+
+.stars__list {
+  display: block;
+  width: 100%;
+  border: 1px solid #30363d;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.stars__list-el {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #30363d;
+  > h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #c9d1d9;
+  }
+  > p {
+    color: #8b949e;
+    font-size: 12px;
+  }
+}
+
+.stars__list-el:nth-child(3) {
+  border: none;
+}
+
+.future {
+  padding: 16px;
+}
+
+.futere__back {
+  > a {
+    &:hover {
+      text-decoration: underline;
+    }
+    > svg {
+      margin-bottom: -2px;
+    }
+    color: #58a6ff;
+  }
+}
+
+.stars__list-bottom {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  > span {
+    border: 1px solid #238636;
+    color: #238636;
+    font-size: 85%;
+    padding: 2px 6px;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  > p {
+    color: #8b949e;
+    font-size: 12px;
+  }
+  > a {
+    color: #58a6ff;
+    font-size: 12px;
+  }
+}
+
+.stars__main-header-el {
+  justify-content: space-between;
+  > input {
+    width: 450px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:focus {
+      width: 450px !important;
+      margin: 0 !important;
+    }
+  }
+}
+
+.stars__main-header-container {
+  margin-top: 15px;
+  display: block;
+  width: 100%;
+}
+
+.stars__search {
+  &::placeholder {
+    background-repeat: no-repeat !important;
+    background-image: url("../../imgs/search.png") !important;
+    background-position: left;
+    padding-left: 20px;
+  }
+}

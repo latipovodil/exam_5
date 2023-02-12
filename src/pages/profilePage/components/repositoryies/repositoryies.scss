@@ -1,0 +1,148 @@
+.repo__search {
+  width: 505px !important;
+  padding: 5px 18px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  outline: none;
+  &:focus {
+    width: 505px !important;
+    border: 1px solid #58a6ff;
+    background-color: transparent !important;
+  }
+}
+
+.repo__container {
+  padding: 18px;
+}
+
+.repo__type {
+  color: #c9d1d9;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 5px 16px;
+  background-color: #21262d;
+  border: 1px solid #f0f6fc1a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  &:hover {
+    background-color: #30363d;
+    border-color: #8b949e;
+  }
+}
+
+.repo__select-type {
+  font-size: 14px;
+  font-weight: 600;
+  color: #c9d1d9;
+  line-height: 1.5;
+  padding: 5px;
+  margin-left: 16px;
+  display: inline-block;
+}
+
+.header__createNew-items {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #c9d1d9;
+}
+
+.repo__sortes {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.repo__header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.repo__main {
+  padding: 0;
+}
+
+.repo__item {
+  padding: 0;
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0;
+  width: 100%;
+  padding-top: 34px;
+  padding-bottom: 10px !important;
+  height: auto;
+}
+
+body{
+  color: #8b949e;
+}
+
+.repo__item-star {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -40px;
+  > button {
+    margin: 0;
+  }
+}
+
+.repo__item-link-box {
+  justify-content: start;
+  > p {
+    margin-left: 5px;
+  }
+}
+
+.repo__item-link {
+  font-size: 20px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.repo__item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  >div:nth-child(1){
+    max-width: 672px;
+  }
+}
+
+.repo__stars {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  height: 28px;
+}
+
+.repo__starts-icon {
+  border-radius: 6px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  color: #c9d1d9;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #21262d;
+  border: 1px solid rgba(240, 246, 252, 0.1019607843);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 28px;
+}
+// margin
+
+.repo__item-type-public{
+  padding: 3px 10px;
+  margin-left: 5px;
+}
+
+.repo__item-rl{
+  width: 0;
+  height: 0;
+}

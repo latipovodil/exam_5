@@ -1,0 +1,144 @@
+.main-left__profil-img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 296px;
+  height: 296px;
+  margin-top: -50px;
+  z-index: 6;
+  position: relative;
+}
+
+.main-left__container {
+  padding: 0 10px 0 60px;
+}
+
+input {
+  background-color: transparent;
+}
+
+.main-left__amoji {
+  z-index: 6;
+  position: relative;
+  > div {
+    cursor: pointer;
+    background-color: #0d1117;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 200px;
+    border: 1px solid #21262d;
+    top: -70px;
+    left: 255px;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    &:hover {
+      padding: 10px;
+      width: 120px;
+      &::after {
+        content: "Set status";
+        margin-left: 5px;
+        color: aliceblue;
+      }
+    }
+  }
+}
+
+.main-left__title-box {
+  > h2 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 24px;
+    color: #c9d1d9;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+  > p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: var(--base-text-weight-light, 300);
+    line-height: 24px;
+    color: #8b949e;
+  }
+}
+
+.main-left__edit-button {
+  color: #c9d1d9;
+  background-color: #21262d;
+  cursor: pointer;
+  transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
+  transition-property: color, background-color, box-shadow, border-color;
+  padding: 5px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  border: 1px solid;
+  border-radius: 6px;
+  border-color: #f0f6fc1a;
+  padding: 5px 16px;
+  max-width: 300px;
+  width: 100%;
+  margin-top: 16px;
+  &:hover {
+    background-color: #30363d;
+    border-color: #8b949e;
+  }
+}
+
+.main-left__follow-box {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  > .main-left__followers {
+    &:hover {
+      > svg {
+        > path {
+          fill: #58a6ff !important;
+        }
+      }
+    }
+  }
+  > a:nth-child(1) {
+    &::after {
+      content: ".";
+      color: #c9d1d9;
+      font-size: 14px;
+      line-height: 1.5;
+      font-weight: 600;
+      margin-left: 5px;
+      margin-bottom: 5px;
+    }
+  }
+  > a {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      > span {
+        color: #58a6ff;
+      }
+      > p {
+        color: #58a6ff;
+      }
+    }
+    > span {
+      color: #c9d1d9;
+      font-size: 14px;
+      line-height: 1.5;
+      font-weight: 600;
+      margin-left: 5px;
+    }
+    > p {
+      color: #8b949e;
+      font-size: 14px;
+      line-height: 1.5;
+      margin-left: 5px;
+    }
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
